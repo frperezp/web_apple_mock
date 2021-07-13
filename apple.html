@@ -7,29 +7,33 @@
     <link rel="stylesheet" type="text/css" href="styles-apple.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Tangerine">
-    <script type="text/javascript" src="blog.js"></script>
 </head>
 <body>
     <nav class="nav" id="navbar-header">
         <header >
             <ul class="nav-brand">
-                <li class="nav-brand__link">
+                <li class="nav-brand__link menu">
                     <a href="#navbar-header">
-                        <img class="nav-icon" src="./resources/menu_white_24dp.svg" width="24px" height="27px" alt="apple logo">
+                        <img class="nav-icon" src="./resources/menu_white_24dp.svg" width="24" height="27" alt="apple logo">
+                    </a>
+                </li>
+                <li class="nav-brand__link close">
+                    <a href="#">
+                        <img class="nav-icon" src="./resources/close_white_24dp.svg" width="24" height="27" alt="apple logo">
                     </a>
                 </li>
                 <li class="nav-brand__link">
-                    <img class="nav-icon" src="./resources/apple.svg" width="16px" height="19px" alt="menu logo">
+                    <img class="nav-icon" src="./resources/apple.svg" width="16" height="19" alt="menu logo">
                 </li>
                 <li class="nav-brand__link">
-                    <img class="nav-icon" src="./resources/shopping_cart_white_24dp.svg" width="24px" height="27px" alt="close logo">
+                    <img class="nav-icon" src="./resources/shopping_cart_white_24dp.svg" width="24" height="27" alt="close logo">
                 </li>
             </ul>
         </header>
 
         <ul class="nav-bar nav-bar-m">
             <li class="nav-brand__link">
-                <img class="apple" src="./resources/apple.svg" width="16px" height="19px" alt="apple logo">
+                <img class="apple" src="./resources/apple.svg" width="16" height="19" alt="apple logo">
             </li>
             <li class="nav-bar__link">
                 <a>Mac</a>
@@ -52,27 +56,28 @@
             <li class="nav-bar__link">
                 <a>Soporte</a>
             </li>
-            <li class="nav-bar__link"></li>
+            <!--<li class="nav-bar__link"></li>
                 <img src="./resources/search_white_24dp.svg" width="24px" height="27px" alt="apple logo">
             </li>
             <li class="nav-bar__link"></li>
                 <img src="./resources/shopping_cart_white_24dp.svg" width="24px" height="27px" alt="apple logo">
-            </li>
+            </li>-->
         </ul>
-
     </nav>
     <main>
-        <section class="buy-online">
+        <div class="buy-online">
             <div class="buy-online__aviso-envio">
-                <p>Compra online y te lo enviamos gratis, rápido y sin contacto físico. Llámanos al 900 150 503 o visita nuestro soporte técnico.</p>
+                <a href="/es/shop/goto/shop">Compra online</a>
+                <span> y te lo enviamos gratis, rápido y sin contacto físico. Llámanos al
+                     900 150 503 o visita nuestro soporte técnico.</span>
             </div>
-        </section>
-        <section class="section-product-new">
+        </div>
+        <section class="section-product product-new">
             <div class="image-background ipad-pro">
                 <div>
                     <h2>iPhone 12</h2>
                     <h3>Más allá de la velocidad.</h3>
-                    <p>Financia tu iPhone 12 desde 809€ o desde 33,71€ en 24 meses. Al 0% TAE</p>
+                    <p>Financia tu iPhone 12 desde 809&euro; o desde 33,71&euro; en 24 meses. Al 0% TAE</p>
                 </div>
                 <div>
                     <a class="section-product__link-product">Más información ></a>
@@ -80,8 +85,7 @@
                 </div>
             </div>
         </section>
-
-        <section class="section-product" style="background-color:white;color: black;">
+        <section class="section-product half-product" style="background-color:white;color: black;">
             <div class="image-background products-all">
                 <div>
                     <h2>iOS 15</h2>
@@ -93,7 +97,7 @@
             </div>
         </section>
 
-        <section class="section-product" style="background-color:white;color: black;">
+        <section class="section-product half-product" style="background-color:white;color: black;">
             <div class="image-background products-watch">
                 <div>
                     <h2>iOS 15</h2>
@@ -104,35 +108,67 @@
                 </div>
             </div>
         </section>
-
     </main>
     <footer>
-        <section class="footer-padding">
+        <div class="footer-padding">
             <div class="footer-color">
                 <div class="footer-style">
-                    <p>§ Importe mínimo de financiación: 299 €. Ejemplo de financiación: 879 € en 24 cuotas. 23 cuotas de 36,63 € y una última cuota de 36,51 €. Intereses totales: 0 €. Coste total del crédito: 0 €. Precio de adquisición al contado: 879 €. Importe total adeudado: 879 €. Precio total a plazos: 879 €. TIN 0 %. TAE 0 %. Sistema de amortización francés.
-
-                        Oferta sujeta a la previa autorización de Banco Cetelem S.A.U. tras el estudio de la documentación aportada y la firma del contrato. Validez de la oferta desde el 17 de junio hasta el 29 de julio de 2021 ambos incluidos. Las condiciones de financiación para cualquier otro producto se pueden obtener aquí. Consulta los términos y condiciones.
+                    <span>Importe mínimo de financiación: 299 &euro;.
+                         Ejemplo de financiación: 879 &euro; en 24 cuotas. 23 cuotas de 36,63 &euro; y una última cuota de 36,51 &euro;.
+                          Intereses totales: 0 &euro;. Coste total del crédito: 0 €. Precio de adquisición al contado: 879 &euro;.
+                           Importe total adeudado: 879 &euro;. Precio total a plazos: 879 &euro;.TIN 0 %.</span>
+                    <span class="underline"> TAE 0 %</span>
+                    <span>. Sistema de amortización francés.</span>   
+                    <br>
+                    <br>   
+                    <span>Oferta sujeta a la previa autorización de Banco Cetelem S.A.U. tras el estudio de la
+                     documentación aportada y la firma del contrato. Validez de la oferta desde el 17 de junio hasta
+                      el 29 de julio de 2021 ambos incluidos. Las condiciones de financiación para cualquier otro
+                       producto se pueden obtener </span>
+                    <a href="https://www.cetelem.es/prestamo/calculadora-apple-promo/">aquí</a>.
+                    <a href="/es/shop/browse/finance/loan">Consulta los términos y condiciones</a>.
                         
-                        Las compras que se hagan en el Apple Store para Educación o para Empresas quedan excluidas de esta promoción.
-                    </p><p>1. La oferta con pago mensual se basa en una financiación de 24 meses al 0 % TAE. Financiación ofrecida por Banco Cetelem S.A.U.
+                    <p>Las compras que se hagan en el Apple Store para Educación o para Empresas quedan excluidas
+                     de esta promoción.
+                    </p>
+                    <p>1. La oferta con pago mensual se basa en una financiación de 24 meses al 0 % TAE.
+                         Financiación ofrecida por Banco Cetelem S.A.U.
                         
-                        Ejemplo de financiación: 809 € pagados en 24 meses al 0 % TIN y 0 % TAE. 23 cuotas de 33,71 € y una última cuota de 33,67 €. Intereses totales: 0 €. Coste total del crédito: 0 €. Precio de adquisición al contado: 809 €. Importe total adeudado: 809 €. Precio total a plazos: 809 €.
+                    <p class="bold">Ejemplo de financiación: 809 &euro; pagados en 24 meses al 0 % TIN y 0 % TAE. 23 cuotas de 33,71 &euro;
+                     y una última cuota de 33,67 &euro;. Intereses totales: 0 &euro;. Coste total del crédito: 0 &euro;. Precio de
+                      adquisición al contado: 809 &euro;. Importe total adeudado: 809 &euro;. Precio total a plazos: 809 &euro;.</p>
                         
-                        Importe mínimo: 240 €. Sin comisión de formalización. Oferta sujeta a la previa autorización de Banco Cetelem S.A.U. tras el estudio de la documentación aportada y la firma del contrato. Consulta los términos y condiciones: apple.com/es/shop/browse/financing/terms.
-                    </p><p>    2. La oferta con pago mensual se basa en una financiación de 24 meses al 0 % TAE. Financiación ofrecida por Banco Cetelem S.A.U.
+                    <p>Importe mínimo: 240 &euro;. Sin comisión de formalización. Oferta sujeta a la previa autorización
+                         de Banco Cetelem S.A.U. tras el estudio de la documentación aportada y la firma del contrato.
+                          Consulta los términos y condiciones: apple.com/es/shop/browse/financing/terms.
+                    </p>
+                    
+                    <span>2. La oferta con pago mensual se basa en una financiación de 24 meses al </span>
+                    <span class="underline">0 % TAE</span>
+                    <span>. Financiación ofrecida por Banco Cetelem S.A.U.</span>
                         
-                        Ejemplo de financiación: 1.159 € pagados en 24 meses al 0 % TIN y 0 % TAE. 23 cuotas de 48,29 € y una última cuota de 48,33 €. Intereses totales: 0 €. Coste total del crédito: 0 €. Precio de adquisición al contado: 1.159 €. Importe total adeudado: 1.159 €. Precio total a plazos: 1.159 €.
+                    <p class="bold">Ejemplo de financiación: 1.159 &euro; pagados en 24 meses al 0 % TIN y 0 % TAE. 23 cuotas de 48,29 &euro;
+                         y una última cuota de 48,33 &euro;. Intereses totales: 0 &euro;. Coste total del crédito: 0 €. Precio de
+                          adquisición al contado: 1.159 &euro;. Importe total adeudado: 1.159 &euro;. Precio total a plazos: 1.159 &euro;.</p>
                         
-                        Importe mínimo: 240 €. Sin comisión de formalización. Oferta sujeta a la previa autorización de Banco Cetelem S.A.U. tras el estudio de la documentación aportada y la firma del contrato. Consulta los términos y condiciones: apple.com/es/shop/browse/financing/terms.
-                    </p><p>    3. No disponible en India.
-                        Apple TV+ por 4,99 €/mes después de la prueba gratuita. Una sola suscripción por cuenta compartida de En Familia. La oferta tiene validez durante 3 meses desde que se activa un dispositivo válido. Si no se cancela, la suscripción se renueva automáticamente. Sujeto a restricciones y otras condiciones.</p>
+                    <p>Importe mínimo: 240 &euro;. Sin comisión de formalización. Oferta sujeta a la previa autorización
+                         de Banco Cetelem S.A.U. tras el estudio de la documentación aportada y la firma del contrato.
+                          Consulta los términos y condiciones: apple.com/es/shop/browse/financing/terms.
+                    </p>
+                    
+                    <p>Apple TV+ por 4,99 &euro;/mes después de la prueba gratuita. Una sola suscripción por cuenta
+                         compartida de En Familia. La oferta tiene validez durante 3 meses desde que se activa
+                          un dispositivo válido. Si no se cancela, la suscripción se renueva automáticamente.
+                           Sujeto a restricciones y otras condiciones.</p>
                 </div>
                 <nav>
                     <div class="nav-bar-show">
-                        <div class="footer-item">
-                            <a class="footer-item__link">Ver y comprar</a>
-                            <ul class="footer-item__list" id="footer-item">
+                        <div class="footer-item" id="footer-item">
+                            <p class="footer-item__link">Ver y comprar</p>
+                            <span class="footer-item__expand">+</span>
+                            <a href="#footer-item" class="footer-item__open-list"></a>
+                            <a href="#" class="footer-item__close-list"></a>
+                            <ul class="footer-item__list">
                                 <li>
                                     <a>Mac</a>
                                 </li>
@@ -162,35 +198,189 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="footer-item">
-                            <a class="footer-item__link">Servicios</a>
-                        </div>
-                        <div class="footer-item">
-                            <a class="footer-item__link">Cuentas</a>
+                        <div>
+                            <div class="footer-item">
+                                <a class="footer-item__link">Servicios</a>
+                                <span class="footer-item__expand">+</span>
+                                <ul class="footer-item__list">
+                                    <li>
+                                        <a>Apple Music</a>
+                                    </li>
+                                    <li>
+                                        <a>Apple TV+</a>
+                                    </li>
+                                    <li>
+                                        <a>Apple Arcade</a>
+                                    </li>
+                                    <li>
+                                        <a>iCloud</a>
+                                    </li>
+                                    <li>
+                                        <a>Apple One</a>
+                                    </li>
+                                    <li>
+                                        <a>Apple Pay</a>
+                                    </li>
+                                    <li>
+                                        <a>Apple Books</a>
+                                    </li>
+                                    <li>
+                                        <a>Apple Podcasts</a>
+                                    </li>
+                                    <li>
+                                        <a>Apple Store</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-item">
+                                <a class="footer-item__link">Cuentas</a>
+                                <span class="footer-item__expand">+</span>
+                                <ul class="footer-item__list">
+                                    <li>
+                                        <a>Gestionar ID de Apple</a>
+                                    </li>
+                                    <li>
+                                        <a>Cuenta de Apple Store</a>
+                                    </li>
+                                    <li>
+                                        <a>iCloud.com</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="footer-item">
                             <a class="footer-item__link">Apple Store</a>
+                            <span class="footer-item__expand">+</span>
+                            <ul class="footer-item__list">
+                                <li>
+                                    <a>Encontrar una tienda</a>
+                                </li>
+                                <li>
+                                    <a>Comprar online</a>
+                                </li>
+                                <li>
+                                    <a>Genius Bar</a>
+                                </li>
+                                <li>
+                                    <a>Today at Apple</a>
+                                </li>
+                                <li>
+                                    <a>Campamento de Apple</a>
+                                </li>
+                                <li>
+                                    <a>App Apple Store</a>
+                                </li>
+                                <li>
+                                    <a>Reacondicionado</a>
+                                </li>
+                                <li>
+                                    <a>Financiación</a>
+                                </li>
+                                <li>
+                                    <a>Apple Trade In</a>
+                                </li>
+                                <li>
+                                    <a>Ayudar para comprar</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="footer-item">
-                            <a class="footer-item__link">Empresas</a>
+                        <div>
+                            <div class="footer-item">
+                                <a class="footer-item__link">Empresas</a>
+                                <span class="footer-item__expand">+</span>
+                                <ul class="footer-item__list">
+                                    <li>
+                                        <a>Apple y las empresas</a>
+                                    </li>
+                                    <li>
+                                        <a>Compras de empresa</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-item">
+                                <a class="footer-item__link">Educación</a>
+                                <span class="footer-item__expand">+</span>
+                                <ul class="footer-item__list">
+                                    <li>
+                                        <a>Apple en la educación</a>
+                                    </li>
+                                    <li>
+                                        <a>Compras para la universidad</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-item">
+                                <a class="footer-item__link">Salud</a>
+                                <span class="footer-item__expand">+</span>
+                                <ul class="footer-item__list">
+                                    <li>
+                                        <a>Apple en el sector sanitario</a>
+                                    </li>
+                                    <li>
+                                        <a>Salud en el Apple Watch</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="footer-item">
-                            <a class="footer-item__link">Educación</a>
+                        <div>
+                            <div class="footer-item">
+                                <a class="footer-item__link">Valores de Apple</a>
+                                <span class="footer-item__expand">+</span>
+                                <ul class="footer-item__list">
+                                    <li>
+                                        <a>Accesibilidad</a>
+                                    </li>
+                                    <li>
+                                        <a>Medio Ambiente</a>
+                                    </li>
+                                    <li>
+                                        <a>Privacidad</a>
+                                    </li>
+                                    <li>
+                                        <a>Responsabilidad de proveedores</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-item">
+                                <a class="footer-item__link">Acerca de Apple</a>
+                                <span class="footer-item__expand">+</span>
+                                <ul class="footer-item__list">
+                                    <li>
+                                        <a>Newsroom</a>
+                                    </li>
+                                    <li>
+                                        <a>Directivos de Apple</a>
+                                    </li>
+                                    <li>
+                                        <a>Empleo</a>
+                                    </li>
+                                    <li>
+                                        <a>Garantía</a>
+                                    </li>
+                                    <li>
+                                        <a>Inversores</a>
+                                    </li>
+                                    <li>
+                                        <a>Ética y conducta</a>
+                                    </li>
+                                    <li>
+                                        <a>Eventos</a>
+                                    </li>
+                                    <li>
+                                        <a>Creación de empleo en Europa</a>
+                                    </li>
+                                    <li>
+                                        <a>Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="footer-item">
-                            <a class="footer-item__link">Salud</a>
-                        </div>
-                        <div class="footer-item">
-                            <a class="footer-item__link">Valores de Apple</a>
-                        </div>
-                        <div class="footer-item">
-                            <a class="footer-item__link">Acerca de Apple</a>
-                        </div>
+                        
                     </div>
             
                 </nav>
             </div>
-        </section>
+        </div>
 
     </footer>
     
