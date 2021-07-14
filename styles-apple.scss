@@ -18,7 +18,7 @@ body {
 }*/
 
 nav {
-  height: fit-content;
+  //height: fit-content;
   /*display: flex;
     flex-direction: row;
     justify-content:center;
@@ -90,8 +90,16 @@ nav {
     display: none;
 }
 
+.mobile-hide{
+  display: block;
+}
+
 #navbar-header:target .nav-bar{
     height: 300px;
+
+    .mobile-hide{
+      display: none;
+    }
 }
 
 #navbar-header:target .nav-brand{
@@ -105,7 +113,6 @@ nav {
 }
 
 /*nav a{
-
     height: 100%;
     float: left;
     text-align: center;
@@ -122,9 +129,10 @@ li {
   list-style: none;
 }
 
-/*.main__content {
-  overflow: hidden;
-}*/
+main {
+  height: fit-content;
+  background-color: #06c;
+}
 
 .buy-online {
   width: 100%;
@@ -147,14 +155,18 @@ li {
   background-color: black;
   color: azure;
   padding: 10px;
+
+
 }
 
 .half-product {
-    width: 100% - 20px;
+    width: calc(100% - 20px);
+    float: left;
+
 }
 
 .product-new {
-    width: 100% - 20px;
+    width: calc(100% - 20px);
 }
 
 .image-background {
@@ -193,12 +205,12 @@ li {
   height: auto;
 }
 
-section {
-  height: 400px;
+footer{
   float: left;
 }
 
 .footer-padding {
+  //position: relative;
   height: fit-content;
   color: #86868b;
   background-color: #f5f5f7;
@@ -206,19 +218,22 @@ section {
 }
 
 .footer-color {
-  
+    //background-color: red;
 }
 
 .nav-bar-show {
   height: fit-content;
   color: black;
   background-color: #f5f5f7;
+  padding-top: 20px;
 }
 
 .footer-style {
   margin: auto;
   text-align: justify;
   font-size: 12px;
+  border-bottom: 1px solid #d2d2d7;
+  padding-bottom: 10px;
 }
 
 .footer-item {
@@ -311,7 +326,41 @@ section {
   }
 }
 
+.bottom-footer{
+  padding: 34px;
+  font-size: 12px;
+  color: #86868b;
+}
+
+.buy-more{
+  border-bottom: 1px solid #d2d2d7;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-location{
+  padding-bottom: 10px;
+}
+
+.copy-right{
+  padding-bottom: 7px;
+}
+
+.last-footer-list{
+  height: 100px;
+
+  &__item{
+    padding-right: 10px;
+    border-right: 1px solid #d2d2d7;
+    margin-right: 7px;
+  }
+}
+
 @media (min-width: $layout_bp_tablet) {
+
+  .footer-location{
+    float: right;
+  }
 
   .nav {
     display: flex;
@@ -333,22 +382,24 @@ section {
       }
   }
 
+  .mobile-hide{
+    display: block;
+  }
+
   .half-product {
     width: calc(50% - 20px);;
 }
 
   .footer-padding {
       padding: 20px;
-      height: 1000px;
+      //height: 1000px;
   }
 
   .nav-bar-show {
       display: flex;
-      height: auto;
-      height: auto;
       flex-direction: row;
       justify-content: space-around;
-      height: 50px;
+      height: fit-content;
   }
 
   .footer-item__expand{
@@ -385,7 +436,8 @@ section {
 @media (min-width: $layout_bp_desktop) {
     .footer-padding {
         padding: 20px 100px;
-        height: 1000px;
+        //height: 1000px;
+        //background-color: red;
     }
 
     .nav-bar {
